@@ -6,12 +6,14 @@ function App() {
   return (
     <div className="App">
       <h1>E-commerce</h1>
-      <Routes>
-      <Route path = '/productlist' exact component={ProductListing} />
-      </Routes>
+       <ProductListing/>     
       
     </div>
   );
 }
 
 export default App;
+/*<Routes>
+      <Route path = '/productlist' exact component={ProductListing} />
+      </Routes>
+      */
