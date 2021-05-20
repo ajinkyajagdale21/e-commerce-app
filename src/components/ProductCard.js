@@ -5,12 +5,14 @@ export const ProductCard=({product})=>{
   const {state:{cart,wishList},dispatch}=useData()
   const {productName,image,price,ratings,_id} = product;
     return(
-        <div>
-            <img src={image}/>
-            {productName}
-            {ratings}
-            {price}
+      <div>
+        <div className="product-card">
+            <img className="product-img" src={image}/>
+           <p> {productName}</p>
+           <p> {ratings}🌟</p> 
+           <p>$ {price}</p>
 
         </div>
+      </div>
     )
 }
