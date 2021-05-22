@@ -13,3 +13,47 @@
   float: left;
   align-items: center;
 }
+.navbar {
+  width: 99%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  background-color: peachpuff;
+  border-radius: 0.25rem;
+  height: 4rem;
+}
+.navbar .brand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar .brand-title {
+  font-weight: 700;
+}
+.list-non-bullet {
+  list-style: none;
+  text-align: right;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+.icon-btn {
+  border: none;
+  background-color: peachpuff;
+  color: black;
+  font-size: large;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.card-btn {
+  background-color: peachpuff;
+  border: none;
+  margin: 0rem 0.5rem;
+  border-radius: 00.25rem;
+  font-size: medium;
+  font-weight: 540;
+}

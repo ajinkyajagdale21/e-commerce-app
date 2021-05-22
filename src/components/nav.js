@@ -1,35 +1,24 @@
 import React from 'react';
-import {useData} from '../Contexts/DataContext';
+//import {useData} from '../Contexts/DataContext';
 import {Link} from 'react-router-dom';
 
 export const Nav =()=>{
    
     return(
         <div>
-           <nav className="navbar">
-                <Link to ='/'>
-                    <div className="nav-brand">
-                        <div className="navbrand-head">ESportz</div>
-                    </div>
-                </Link>
-                <div className="input nav-search desk">
-                    <i className="fas fa-search"></i>
-                    <input type="text" className="inputText" placeholder="search"/>
-                </div>
-                <div className="nav-items">
-                    <Link to ="/wishlist">
-                        <div className="badge-on-icon nav-pills">
-                        <i className="fas fa-heart icon-only wish"></i>
-                        </div>
+            <nav className="navbar">
+                <div className="brand">
+                    <div className="brand-title ">PeachCart</div>
+                </div> 
+                <ul className="list-non-bullet nav-pills">
+                    <Link to= "/cart">
+                        <li class="list-item-inline"><button className="icon-btn"><i className="fa fa-shopping-cart" aria-hidden="true"></i>Cart</button></li>
                     </Link>
-                    <Link to = '/cart'>
-                        <div className="badge-on-icon nav__pills">
-                            <i className="fas fa-shopping-cart  icon-only cart"></i>
-                        </div>
+                    <Link to ="/wishlist"> 
+                        <li class="list-item-inline"><button className="icon-btn"><i className="fa fa-heart" aria-hidden="true"></i> Wishlist</button></li>
                     </Link>
-                </div>
-
-           </nav>
+                </ul>
+            </nav>   
         </div>
     )
 }
