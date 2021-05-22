@@ -11,7 +11,7 @@ export const ProductListing=()=>{
             <Nav/>
             {loading ? <h3>Loading....</h3> : (
                     <div >
-                        {priceFilteredData.map(product => <ProductCard  product = {product} key = {product._id}/>)}
+                        {priceFilteredData.map(product => <ProductCard  product = {product}  key={product.id}/>)}
                     </div>
             )}
         </div>
